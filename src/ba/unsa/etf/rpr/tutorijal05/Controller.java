@@ -7,7 +7,8 @@ import javafx.scene.control.TextField;
 
 public class Controller{
 public TextField poljeTeksta;
-    public void unesiText(javafx.event.ActionEvent actionEvent) {
+public Button dotBtn;
+    public void display(javafx.event.ActionEvent actionEvent) {
     }
     public void postotak(javafx.event.ActionEvent actionEvent) {
         if(!poljeTeksta.getText().endsWith("%") &&
@@ -54,46 +55,56 @@ public TextField poljeTeksta;
     }
 
     public void jednakost(ActionEvent actionEvent) {
-
+        String s = poljeTeksta.getText();
 
     }
     public void broj7(ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%"))
         poljeTeksta.setText(poljeTeksta.getText() + "7");
     }
 
     public void broj8(ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%"))
         poljeTeksta.setText(poljeTeksta.getText() + "8");
     }
 
     public void broj9(ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%"))
         poljeTeksta.setText(poljeTeksta.getText() + "9");
     }
 
     public void broj0(ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%"))
         poljeTeksta.setText(poljeTeksta.getText() + "0");
     }
 
     public void broj3(ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%"))
         poljeTeksta.setText(poljeTeksta.getText() + "3");
     }
 
     public void broj2(ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%"))
         poljeTeksta.setText(poljeTeksta.getText() + "2");
     }
 
     public void broj1(ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%"))
         poljeTeksta.setText(poljeTeksta.getText() + "1");
     }
 
     public void broj6(ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%"))
         poljeTeksta.setText(poljeTeksta.getText() + "6");
     }
 
     public void broj5(ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%"))
         poljeTeksta.setText(poljeTeksta.getText() + "5");
     }
 
     public void broj4(ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%"))
         poljeTeksta.setText(poljeTeksta.getText() + "4");
     }
 
