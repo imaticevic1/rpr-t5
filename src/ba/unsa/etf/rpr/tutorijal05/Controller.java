@@ -1,22 +1,108 @@
 package ba.unsa.etf.rpr.tutorijal05;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-
-import java.awt.event.ActionEvent;
-
 public class Controller{
-    private Button posto, podeljeno, zbrajanje, mnozenje, oduzimanje;
-    private Button nula, broj1, broj2, broj3, broj4, broj5, broj6, broj7, broj8, broj9;
-    private TextField poljeTeksta;
+public TextField poljeTeksta;
+    public void unesiText(javafx.event.ActionEvent actionEvent) {
+    }
+    public void postotak(javafx.event.ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%") &&
+        !poljeTeksta.getText().endsWith("/") && !poljeTeksta.getText().endsWith("X") &&
+                !poljeTeksta.getText().endsWith("-") && !poljeTeksta.getText().endsWith("+")
+                && !poljeTeksta.getText().equals("")
+                && !poljeTeksta.getText().endsWith("."))
+            poljeTeksta.setText(poljeTeksta.getText() + "%");
+    }
 
-    public void handleButtonAction(ActionEvent event) {
-        if (event.getSource() == posto) {
-            poljeTeksta.setText("%");
-        }
-        else if (event.getSource() == posto) {
-            poljeTeksta.setText("%");
-        }
+    public void podijeli(ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%") &&
+                !poljeTeksta.getText().endsWith("/") && !poljeTeksta.getText().endsWith("X") &&
+                !poljeTeksta.getText().endsWith("-") && !poljeTeksta.getText().endsWith("+") &&
+                        !poljeTeksta.getText().equals("")
+                && !poljeTeksta.getText().endsWith("."))
+        poljeTeksta.setText(poljeTeksta.getText() + "/");
+    }
+
+    public void pomnozi(ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%") &&
+                !poljeTeksta.getText().endsWith("/") && !poljeTeksta.getText().endsWith("X") &&
+                !poljeTeksta.getText().endsWith("-") && !poljeTeksta.getText().endsWith("+") &&
+                        !poljeTeksta.getText().equals("")
+                && !poljeTeksta.getText().endsWith("."))
+        poljeTeksta.setText(poljeTeksta.getText() + "X");
+    }
+
+    public void oduzmi(ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%") &&
+                !poljeTeksta.getText().endsWith("/") && !poljeTeksta.getText().endsWith("X") &&
+                !poljeTeksta.getText().endsWith("-") && !poljeTeksta.getText().endsWith("+")
+                && !poljeTeksta.getText().endsWith("."))
+        poljeTeksta.setText(poljeTeksta.getText() + "-");
+    }
+
+
+    public void dodaj(ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%") &&
+                !poljeTeksta.getText().endsWith("/") && !poljeTeksta.getText().endsWith("X") &&
+                        !poljeTeksta.getText().endsWith("-") && !poljeTeksta.getText().endsWith("+")
+                && !poljeTeksta.getText().endsWith("."))
+            poljeTeksta.setText(poljeTeksta.getText() + "+");
+    }
+
+    public void jednakost(ActionEvent actionEvent) {
+
+
+    }
+    public void broj7(ActionEvent actionEvent) {
+        poljeTeksta.setText(poljeTeksta.getText() + "7");
+    }
+
+    public void broj8(ActionEvent actionEvent) {
+        poljeTeksta.setText(poljeTeksta.getText() + "8");
+    }
+
+    public void broj9(ActionEvent actionEvent) {
+        poljeTeksta.setText(poljeTeksta.getText() + "9");
+    }
+
+    public void broj0(ActionEvent actionEvent) {
+        poljeTeksta.setText(poljeTeksta.getText() + "0");
+    }
+
+    public void broj3(ActionEvent actionEvent) {
+        poljeTeksta.setText(poljeTeksta.getText() + "3");
+    }
+
+    public void broj2(ActionEvent actionEvent) {
+        poljeTeksta.setText(poljeTeksta.getText() + "2");
+    }
+
+    public void broj1(ActionEvent actionEvent) {
+        poljeTeksta.setText(poljeTeksta.getText() + "1");
+    }
+
+    public void broj6(ActionEvent actionEvent) {
+        poljeTeksta.setText(poljeTeksta.getText() + "6");
+    }
+
+    public void broj5(ActionEvent actionEvent) {
+        poljeTeksta.setText(poljeTeksta.getText() + "5");
+    }
+
+    public void broj4(ActionEvent actionEvent) {
+        poljeTeksta.setText(poljeTeksta.getText() + "4");
+    }
+
+    public void tocka(ActionEvent actionEvent) {
+        if(!poljeTeksta.getText().endsWith("%") &&
+                !poljeTeksta.getText().endsWith("/") && !poljeTeksta.getText().endsWith("X") &&
+                !poljeTeksta.getText().endsWith("-") && !poljeTeksta.getText().endsWith("+")
+        && !poljeTeksta.getText().endsWith(".") && !poljeTeksta.getText().equals(""))
+            poljeTeksta.setText(poljeTeksta.getText() + ".");
+
     }
 }
